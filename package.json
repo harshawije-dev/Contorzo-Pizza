@@ -1,0 +1,26 @@
+{
+  "name": "contorzo-pizza-api",
+  "version": "1.0.0",
+  "description": "API documentation for Contorzo Pizza backend",
+  "main": "Startup.js",
+  "scripts": {
+    "dev": "nodemon src/Startup.ts",
+    "ts:watch": "tsc --watch",
+    "start": "nodemon dist/Startup.js"
+  },
+  "author": "HP Wijesinghe",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.4.0",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.8.3",
+    "express": "^4.18.2"
+  }
+}
