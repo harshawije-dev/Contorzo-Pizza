@@ -16,6 +16,6 @@ export const createCustomer = router.post('/', (req, res) => {
         });
     }
     newCustomer.catch(e => console.log(e));
-    //console.log(newCustomer);
+    // console.log(newCustomer);
 });
 //# sourceMappingURL=Create.js.map

@@ -18,6 +18,6 @@ export const createCustomer = router.post('/', (req: Request, res: Response) => 
         });
     }
     newCustomer.catch(e => console.log(e));
-    //console.log(newCustomer);
+    // console.log(newCustomer);
 });
 
