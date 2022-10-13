@@ -5,8 +5,3 @@ export const GetListAsync = async () => {
     const data = await $prisma.customers.findMany();
     return data;
 }
-
-// (async () => {
-//     const customers = await GetListAsync();
-//     console.log(customers);
-// })();
