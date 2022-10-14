@@ -3,6 +3,7 @@ import { createCustomer } from "./API/Customers/Create.js";
 import bodyParser from "body-parser";
 import { getCustomerList } from "./API/Customers/List.js";
 import { getCustomer } from "./API/Customers/Get.js";
+import { updateCustomer } from "./API/Customers/Update.js";
 
 const app = express();
 const PORT = 5000;
@@ -15,6 +16,7 @@ app.listen(PORT, () => {
 // Body Parser
 app.use(bodyParser.json());
 
+
 // Main Route
 app.use("/api", (req: Request, res: Response) => {
     res.send("URL works");
@@ -24,3 +26,4 @@ app.use("/api", (req: Request, res: Response) => {
 app.use("/Customers", createCustomer)
 app.use("/Customers", getCustomerList)
 app.use("/Customers", getCustomer)
+app.use("/Customers", updateCustomer)

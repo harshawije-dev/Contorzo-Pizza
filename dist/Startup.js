@@ -3,6 +3,7 @@ import { createCustomer } from "./API/Customers/Create.js";
 import bodyParser from "body-parser";
 import { getCustomerList } from "./API/Customers/List.js";
 import { getCustomer } from "./API/Customers/Get.js";
+import { updateCustomer } from "./API/Customers/Update.js";
 const app = express();
 const PORT = 5000;
 // Prepare the Server
@@ -19,4 +20,5 @@ app.use("/api", (req, res) => {
 app.use("/Customers", createCustomer);
 app.use("/Customers", getCustomerList);
 app.use("/Customers", getCustomer);
+app.use("/Customers", updateCustomer);
 //# sourceMappingURL=Startup.js.map
